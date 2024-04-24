@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "Montreal Bold";
+    src: url("fonts/PPNeueMontreal-Bold.otf");
+}
+
+@font-face {
+    font-family: "Montreal Thin";
+    src: url("fonts/PPNeueMontreal-Thin.otf");
+}
+
+@font-face {
+    font-family: "Montreal Book";
+    src: url("fonts/PPNeueMontreal-Book.otf");
+}
+
+@font-face {
+    font-family: "Montreal Medium";
+    src: url("fonts/PPNeueMontreal-Medium.otf");
+}
+
+body {
+    margin: 0;
+}
+
+#header-div {
+    display: flex;
+    margin: 30px auto 0 auto;
+    width: 300px;
+    justify-content: space-around;
+    background: #e8e5e480;
+    padding: 4px 4px;
+    border-radius: 30px;
+    position: sticky;
+    top: 30px;
+    z-index: 100;
+    backdrop-filter: blur(16px);
+}
+
+#header-first-btn, #header-second-btn, #header-third-btn {
+    font-family: "Montreal Book", sans-serif;
+    font-size: 14px; 
+    font-weight: 400px;
+}
+
+#header-first-btn {
+    background-color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;   
+}
+
+#header-second-btn, #header-third-btn {
+    background: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+#header-first-btn, #header-second-btn, #header-third-btn:hover {
+    cursor: pointer;
+}
+
+#main-text-div {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    align-items: center;
+    align-content: center;
+}
+
+#text-under-main-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 370px;
+    padding-top: 20px;
+}
+
+#main-text {
+    font-family: "Montreal Medium", sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    display: block;
+    width: 700px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+.text-under-main-txt {
+    font-family: "Montreal Book", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 12px;
+}
+
+.text-under-main-txt-background {
+    background: #e8e5e480;
+    border-radius: 30px;
+}
+
+.row-images-div {
+    display: grid;
+    grid-template-columns: 650px 650px;
+    justify-content: center;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.image-in-rows {
+    width: 650px;
+    border-radius: 10px;
+    filter: blur(0);
+    transition: filter 0.2s;
+}
+
+.left-side-div, .right-side-div {
+    position: relative;
+}
+
+.both-sides-hover:hover .image-in-rows {
+    filter: blur(5px);
+    transition: 0.5s filter ;
+}
+
+.both-sides-hover:hover .text-on-image {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.both-sides-hover:hover .arrow-icon {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.text-on-image {
+    font-family: "Montreal Book", sans-serif;
+    font-size: 18px;
+    font-weight: 400px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    color: white;
+    transition: opacity 0.2s;
+    opacity: 0;
+}
+
+.arrow-icon {
+    width: 50px;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+#bottom-text-div {
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+#bottom-text, #text-under-bottom-txt {
+    font-family: "Montreal Medium", sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+}
+
+#bottom-text {
+    margin-bottom: 0;
+}
+
+#text-under-bottom-txt {
+    color: #7f7f7f;
+    width: 207px;
+    margin: 0 auto 0 auto;
+    margin-top: 0;
+}
+
+#text-under-bottom-txt:hover {
+    color: black;
+    cursor: pointer;
+}
+
+#footer-div {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 25px;
+}
+
+#right-side-footer-div {
+    display: flex;
+}
+
+.social-txt, #copytight-txt {
+    font-family: "Montreal Book", sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    padding: 10px;
+}
+
+#sticky-button-shop-btn {
+    background: black;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    color: white;
+    font-family: "Montreal Book", sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    position: fixed;
+    bottom: 30px;
+    left: 905px;
+    z-index: 100;
+}
+
+#sticky-button-shop-btn:hover {
+    cursor: pointer;
+}
